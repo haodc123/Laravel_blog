@@ -12,4 +12,4 @@
 	</article>
 	{!! link_to_route('articles.index', 'Articles') !!}
 
-@endsectiom
+@endsection
