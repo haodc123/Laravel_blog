@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Request;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,8 +16,9 @@ class AppServiceProvider extends ServiceProvider
     {
         //
 		view()->composer('*', function($view) {
-			$vlayout = 'layouts.html'; // resources/views/layouts/html.blade.php
-			$view->with(compact('vlayout'));
+			$vremote = Request::ajax() ? true : null;
+            $vlayout = $vremote ? 'layouts.ajax' : 'layouts.html'; // resources/views/layouts/html.blade.php
+            $view->with(compact('vremote', 'vlayout'));
 		});
     }
 

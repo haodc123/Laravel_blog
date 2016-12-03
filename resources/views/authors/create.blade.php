@@ -5,7 +5,7 @@
 
 @section('content')
 
-{!! Form::open(['route' => 'authors.store', 'id' => 'authors-form']) !!}
+{!! Form::open(['route' => 'authors.store', 'data-remote' => $vremote]) !!}
     @include ('authors.form', ['submitButtonText' => 'Add Author'])
 {!! Form::close() !!}
 

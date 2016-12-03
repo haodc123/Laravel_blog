@@ -5,7 +5,7 @@
 
 @section('content')
 
-	{!! Form::open(['route' => 'articles.store', 'id' => 'articles-form']) !!}
+	{!! Form::open(['route' => 'articles.store', 'data-remote' => $vremote]) !!}
 		@include ('articles.form', ['submitButtonText' => 'Add Article'])
 	{!! Form::close() !!}
 

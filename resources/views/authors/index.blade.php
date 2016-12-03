@@ -6,7 +6,7 @@
 @section('content')
 	@include('shared.alert')
 	<h1>Authors</h1>
-	{!! link_to_route('authors.create', 'New Author', null, ['class' => 'btn btn-primary btn-lg']) !!}
+	{!! link_to_route('authors.create', 'New Author', null, ['class' => 'btn btn-primary btn-lg', 'data-remote' => 'true']) !!}
 	<table border="1">
 		<tr>
 			<th>Edit</th>
