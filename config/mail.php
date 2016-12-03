@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,9 +55,15 @@ return [
     |
     */
 
+	/**
+	* 1. Mail paxtest12345 can duoc cai dat less security (cu gui mail lan dau tien la google nhac)
+	* 2. Can chay php artisan config:cache
+	*/
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        //'address' => env('MAIL_FROM_ADDRESS'),
+        //'name' => env('MAIL_FROM_NAME'),
+		'address' => 'paxtest12345@gmail.com',
+        'name' => 'test pax',
     ],
 
     /*
@@ -71,7 +77,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION'),
 
     /*
     |--------------------------------------------------------------------------

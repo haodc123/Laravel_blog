@@ -12,6 +12,7 @@
 		<tr>
 			<th>Edit</th>
 			<th>Delete</th>
+			<th>Recommend</th>
 			<th>Title</th>
 			<th>Author</th>
 		</tr>
@@ -23,6 +24,7 @@
 						<button type="submit">Delete</button>
 					{!! Form::close() !!}
 				</th>
+				<td>{!! link_to_route('articles.recommendations.create', 'Recommend', $article->id) !!}</td>
 				<th>{!! link_to_route('articles.show', $article->title, $article->id) !!}</th>
 				<th>{!! $article->author->name !!}</th>
 			</tr>
