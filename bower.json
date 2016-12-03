@@ -1,0 +1,22 @@
+{
+  "name": "laravel_blog",
+  "version": "0.0.1",
+  "authors": [
+    "hao DC"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "yoursite.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

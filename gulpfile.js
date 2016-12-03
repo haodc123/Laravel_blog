@@ -13,7 +13,10 @@ require('laravel-elixir-vue-2');
  |
  */
 
-elixir((mix) => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+//var elixir = require('laravel-elixir');
+var bowerFiles = require('main-bower-files');
+ 
+elixir(function(mix) {
+    mix.sass('app.scss');
+    mix.scripts(bowerFiles('**/*.js'), 'public/js/3rd-party.js', '/');
 });
