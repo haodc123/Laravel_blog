@@ -24,7 +24,8 @@ class RecommendationRequest extends FormRequest
     public function rules()
     {
         return [
-            'dest-email'=> 'required|email'
+            'dest-email'=> 'required|email',
+			'g-recaptcha-response' => 'required|recaptcha'
         ];
     }
 }
