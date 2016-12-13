@@ -15376,4 +15376,12 @@ button.close {
   }
 }
 
+#bootstrap-overrides #alert-box a.ct-close-alert {
+  float: right;
+}
+
+#bootstrap-overrides #loading-div {
+  display: none;
+}
+
 /*# sourceMappingURL=app.css.map */

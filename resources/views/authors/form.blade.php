@@ -1,10 +1,10 @@
 @include('shared.alert')
 <div class="form-group">
     {!! Form::label('name', 'Name:') !!}
-    {!! Form::text('name', null, ['class' => 'btn btn-primary']) !!}
+    {!! Form::text('name', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
     {!! Form::label('email', 'E-mail:') !!}
-    {!! Form::text('email', null, ['class' => 'btn btn-primary']) !!}
+    {!! Form::text('email', null, ['class' => 'form-control']) !!}
 </div>
 {!! Form::submit($submitButtonText, ['class' => 'btn btn-primary']) !!}

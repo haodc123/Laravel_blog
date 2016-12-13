@@ -140,6 +140,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+		Barryvdh\Debugbar\ServiceProvider::class,
 		Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
 		Collective\Html\HtmlServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
@@ -194,6 +195,7 @@ return [
     */
 
     'aliases' => [
+		'Debugbar' => Barryvdh\Debugbar\Facade::class,
 		'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
 		'Form' => Collective\Html\FormFacade::class,
 		'Html' => Collective\Html\HtmlFacade::class,
