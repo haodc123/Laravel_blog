@@ -1,6 +1,12 @@
 <?php
 namespace App\MyGlobalFunc;
 
+/**
+ * For pagination with AJAX
+ * Demo with Articles model
+ * @Author: HaoDC
+ *
+ */
 class MyPaging
 {
     
