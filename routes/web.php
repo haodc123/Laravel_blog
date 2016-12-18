@@ -24,5 +24,7 @@ Route::get('articles/page/{page}', 'ArticlesController@paging')->name('paging_ar
 Auth::routes();
 
 Route::get('/admin/home', 'HomeController@index')->middleware('admin');
+Route::get('/admin/info', 'HomeController@info')->middleware('admin');
+Route::post('/admin/upload', 'HomeController@upload')->middleware('admin');
 
 Route::get('/admin/home-normal', 'HomeController@normal')->middleware('auth');

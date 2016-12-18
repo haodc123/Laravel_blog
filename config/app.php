@@ -196,6 +196,7 @@ return [
     */
 
     'aliases' => [
+		'Input' => Illuminate\Support\Facades\Input::class,
 		'MyPaging' => App\MyGlobalFunc\MyPaging::class,
 		'Debugbar' => Barryvdh\Debugbar\Facade::class,
 		'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,

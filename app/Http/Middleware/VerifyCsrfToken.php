@@ -12,18 +12,19 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        //
+        'admin/*',
+		'logout',
     ];
 	
 	/**
 	 * Temporary disable token require
 	 * haoDC
 	 */
-	protected function tokensMatch($request)
+	/*protected function tokensMatch($request)
 	{
 		if ($request->wantsJson()) {
 				return true;
 		}
 		return parent::tokensMatch($request);
-	}
+	}*/
 }

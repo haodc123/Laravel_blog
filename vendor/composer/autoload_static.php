@@ -311,6 +311,7 @@ class ComposerStaticInita305f14a875c7439b47ffadca4331fed
     );
 
     public static $classMap = array (
+        'AddAvatar' => __DIR__ . '/../..' . '/database/migrations/2016_12_18_082601_add_avatar.php',
         'AddRoleToUser' => __DIR__ . '/../..' . '/database/migrations/2016_12_13_110703_add_role_to_user.php',
         'CreateArticlesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_01_034716_create_articles_table.php',
         'CreateAuthorsTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_02_032129_create_authors_table.php',

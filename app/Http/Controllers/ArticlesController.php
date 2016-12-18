@@ -7,7 +7,7 @@ use App\Author;
 use App\Articles;
 use App\Http\Requests\ArticlesRequest;
 use Illuminate\Support\Facades\Input;
-use App\MyGlobalFunc\MyPaging;
+use MyPaging;
 
 class ArticlesController extends Controller
 {

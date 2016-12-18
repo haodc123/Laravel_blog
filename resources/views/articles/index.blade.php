@@ -77,8 +77,8 @@ $(document).ready(function() {
 	<div id="results">
             
         </div>
-        <a href="{{ action('ArticlesController@paging', ['page' => 1]) }}" >Start Paging with action</a><br />
-        {!! link_to_route('paging_articles', 'Start paging with link_to_route', ['page'=>'1']) !!}
-        
+        <a href="{{ action('ArticlesController@paging', ['page' => 1]) }}" >Link type 1</a><br />
+        {!! link_to_route('paging_articles', 'Link type 2', ['page'=>'1']) !!}<br />
+        <a href="{{ url('/articles/page/1') }}">Link type 3</a>
 
 @endsection
